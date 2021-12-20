@@ -17,7 +17,7 @@ public class Account {
          */
         String finalName = name.trim();
         if (finalName.length()<3 || finalName.length()>19) result = false;
-        if (countSpace(finalName)>1) result = false;
+        if (countSpace(finalName)!=1) result = false;
         return result;
     }
 
