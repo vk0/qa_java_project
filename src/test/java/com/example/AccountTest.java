@@ -21,12 +21,14 @@ public class AccountTest {
         return new Object[][]{
                 {"Тимоти Шаламе", true},
                 {"Тимоти  Шаламе", false},
-                {"  Тимоти Шаламе ", true},
+                {"  Тимоти Шаламе ", false},
                 {"Т Ш", true}, //3
                 {"Тимоти Шаламеблабла", true}, //19
                 {"Т ", false}, //2
                 {"Тимотиииии Шаламеееее", false}, //21
                 {"Тимоти", false},
+                {"", false},
+                {"     ", false},
         };
     }
 

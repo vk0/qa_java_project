@@ -11,6 +11,6 @@ public class Account {
     }
 
     public boolean checkNameToEmboss() {
-        return Pattern.matches("^(\\S)+(\\s{1})(\\S)+$",name.trim()) && Pattern.matches("^.{3,19}$",name.trim());
+        return Pattern.matches("(?=^.{3,19}$)^(\\S)+(\\s{1})(\\S)+$",name);
     }
 }
